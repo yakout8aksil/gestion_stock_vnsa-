@@ -257,7 +257,7 @@ with tab_rapports:
             # Génération dynamique du fichier PDF intégrant les deux tableaux
             pdf_flux = generer_pdf(df_global, st.session_state.mouvements)
             st.download_button(
-                label="📄 Exporter l'état de stock en PDF",
+                label="Exporter l'état de stock en PDF",
                 data=pdf_flux,
                 file_name=f"Rapport_Stocks_Logistique_{datetime.now().strftime('%Y%m%d')}.pdf",
                 mime="application/pdf",
